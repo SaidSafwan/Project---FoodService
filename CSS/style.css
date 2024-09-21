@@ -1,16 +1,16 @@
 /* CSS reset */
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
 /* css variables */
-:root{
+:root {
     --navbar-height: 59px;
 }
 
 /* Navigation Bar */
-#navbar{
+#navbar {
     display: flex;
     position: relative;
     top: 0;
@@ -18,7 +18,7 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-#navbar::before{
+#navbar::before {
     content: "";
     background-color: black;
     position: absolute;
@@ -29,10 +29,11 @@
 }
 
 /* Navigation: Logo and image */
-#logo{
+#logo {
     margin: 3px 43px;
 }
-#logo img{
+
+#logo img {
 
     height: 68px;
     width: 70px;
@@ -44,12 +45,12 @@
     display: flex;
 }
 
-#navbar ul li{
+#navbar ul li {
     list-style: none;
     font-size: 1.2rem;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.4rem;
@@ -60,54 +61,90 @@
 
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
     /* color: black; */
     border-color: white;
 
 }
 
 /* Home Section  */
-#home{
+#home {
     display: flex;
     flex-direction: column;
-    height: 570px;
+    height: 633px;
     padding: 5px 200px;
     align-items: center;
     justify-content: center;
 }
 
-#home::before{
+#home::before {
     content: "";
     /* intial .. to go back from css folder  */
-    background: url(../images/food-dish3.jpg) no-repeat center center/ cover ;
+    background: url(../images/food-dish3.jpg) no-repeat center center/cover;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.9 ;
+    opacity: 0.9;
     top: 0;
 
 }
 
-#home h1{
+#home h1 {
     color: white;
     text-align: center;
     font-family: "Bree Serif", serif;
 }
-#home p{
+
+#home p {
     color: white;
     text-align: center;
     font-size: 1rem;
     font-family: "Bree Serif", serif;
 }
 
-/* Utility Class */
-.h-primary{
-    font-size: 3.5rem;
-    padding:12px;
+/* Service section */
+#services {
+    margin: 6px;
+    display: flex;
 }
 
-.btn{
+#services .box {
+    border: 2px solid #f74d4d;
+    padding: 14px;
+    margin: 3px 10px;
+    border-radius: 23px;
+    background-color: #f74d4d;
+    font-family: "Bree Serif", serif;
+}
+
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .cateringimg{
+    position: relative;
+    bottom: -20px;
+}
+
+
+
+/* Utility Class */
+.h-primary {
+    font-size: 3.5rem;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+}
+
+.h-secondary {
+    font-size: 1.57rem;
+    padding: 3px;
+    font-family: "Bree Serif", serif;
+}
+
+.btn {
     margin: 10px;
     font-size: 1.2rem;
     padding: 3px 20px;
@@ -118,7 +155,11 @@
     cursor: pointer;
 }
 
-.btn:hover{ 
+.btn:hover {
     border-color: white;
     border-radius: 10px;
+}
+
+.center {
+    text-align: center;
 }
