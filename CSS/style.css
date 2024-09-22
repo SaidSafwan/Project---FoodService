@@ -171,6 +171,56 @@
     padding: 5px;
 }
 
+/* Contact section */
+#contact{
+    position: relative;
+    padding-bottom: 1.1rem;
+}
+
+#contact::before{
+    content: "";
+    background: url('../images/Contact-bg-img5.jpg') no-repeat center center/ cover;
+    position: absolute;
+    /* height: 500px; */
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.8rem;
+}
+
+#contact-box input:hover, 
+#contact-box textarea:hover{
+    border: 2px solid white;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: "Bree Serif", serif;
+}
+footer{
+    color: white;
+    background-color: black;
+    padding: 9px 20px;
+}
+
 /* Utility Class */
 .h-primary {
     font-size: 3.5rem;
