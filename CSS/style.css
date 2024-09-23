@@ -15,21 +15,23 @@ html{
 /* Navigation Bar */
 #navbar {
     display: flex;
-    position: relative;
+    position: sticky;
     top: 0;
     align-items: center;
     font-family: "Bebas Neue", sans-serif;
+    background-color: rgba(0, 0, 0, 0.511);
 }
 
 #navbar::before {
     content: "";
-    background-color: rgb(199, 196, 196);
+    background-color: rgba(0, 0, 0, 0.511);
     position: absolute;
     height:100%;
     width: 100%;
     z-index: -1;
     opacity: 0.15;
 }
+
 
 /* Navigation: Logo and image */
 #logo {
