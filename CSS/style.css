@@ -71,7 +71,8 @@
 #home {
     display: flex;
     flex-direction: column;
-    height: 567px;
+    /* height: 567px; */
+    height: 646px;
     padding: 5px 200px;
     align-items: center;
     justify-content: center;
@@ -92,6 +93,8 @@
     left: 0;
 }
 
+
+
 #home h1 {
     color: white;
     text-align: center;
@@ -106,10 +109,12 @@
 }
 
 /* Service section */
-.service-section{
+#service-section{
     background-color: #b7acac;
-    padding: 20px;
+    padding: 0px 20px;
+    padding-bottom: 20px;
 }
+
 #services {
     margin: 6px;
     display: flex;
@@ -193,7 +198,7 @@
     width: 100%;
     padding: 0.5rem;
     border-radius: 9px;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
 }
 
 #contact-box input:hover, 
@@ -212,7 +217,7 @@
     width: 40%;
 }
 #contact-box label{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: "Bree Serif", serif;
 }
 footer{
@@ -228,14 +233,13 @@ footer{
     font-family: "Bree Serif", serif;
 }
 .b-primary {
-    font-size: 3rem;
+    font-size: 2.7rem;
     padding: 16px;
     font-family: "Bree Serif", serif;
 }
-
-.h-secondary {
-    font-size: 1.57rem;
-    padding: 3px;
+.b-secondary {
+    font-size: 2.7rem;
+    padding-top: 16px;
     font-family: "Bree Serif", serif;
 }
 
